@@ -24,40 +24,41 @@
   <header class="bg-primaryColor fixed top-0 left-0 w-full z-50">
     <nav class="container relative h-14 flex justify-between items-center">
       <div>
-        <a href="#" class="text-2xl uppercase">
+        <a href="#" class="text-2xl uppercase font-oswald">
           ETA<span class="text-secondaryColor">Burger</span>
         </a>
       </div>
 
-      <div>
-        <ul>
+      <div id="nav-menu" class="hidden absolute  top-0 left-0 w-full py-14 bg-primaryColor border-b border-secondaryColor
+      md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto">
+        <ul class="flex flex-col text-center gap-5 md:flex-row">
           <li>
-            <a href="#home">Home</a>
+            <a href="#home" class="nav__link hover:text-secondaryColor ease-in-duration-200 ">Home</a>
           </li>
           <li>
-            <a href="#about">About Us</a>
+            <a href="#about" class="nav__link hover:text-secondaryColor ease-in-duration-200" >About Us</a>
           </li>
           <li>
-            <a href="#menu">Menu</a>
+            <a href="#menu" class="nav__link hover:text-secondaryColor ease-in-duration-200" >Menu</a>
           </li>
           <li>
-            <a href="#review">Review</a>
+            <a href="#review" class="nav__link hover:text-secondaryColor ease-in-duration-200" >Review</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact" class="nav__link hover:text-secondaryColor ease-in-duration-200" >Contact</a>
           </li>
         </ul>
 
-        <div>
+        <div class="absolute top-[0.7rem] text-2xl right-3 cursor-pointer md:hidden" id="nav-close" >
           <i class="ri-close-line"></i>
         </div>
       </div>
 
-      <div>
-        <i class="ri-moon-line"></i>
+      <div class="flex items-center gap-5">
+        <i class="ri-moon-line cursor-pointer ml-4 text-xl"></i>
         
-        <div>
-          <i class="ri-menu-2-line"></i>
+        <div id="hamburger" class="md:hidden">
+          <i class="ri-menu-2-line cursor-pointer text-xl"></i>
         </div>
       </div>
     </nav>
@@ -70,5 +71,8 @@
   <footer>
 
   </footer>
+
+  <!-- javascripet link -->
+  <script src="js/nav.js"></script>
 </body>
 </html>
