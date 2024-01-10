@@ -65,7 +65,59 @@
   </header>
   <!------ Main ------>
   <main>
+    <!-- Home  -->
+    <section id="home">
+      <!-- 
+        IN: tailwind.config.js
+        DOWN: extend tag
 
+      keyframes: {
+        move: {
+          "50%": {transform: 'translateY(-1rem)'}
+        }
+      },
+      animation: {
+        'movingY': 'move 2s linear infinite'
+      }
+      -->
+      <div class="container flex flex-col items-center gap-10 md:flex-row">
+        <div class="mx-auto md:basis-1/2 lg:basis-2/5 animate-movingY">
+          <img src="img/home-img.png" alt="home img" class="w-60 md:w-full">
+        </div>
+
+        <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
+          <h1 class="uppercase text-4xl font-oswald font-bold lg:text-6xl">happy tymmy with tasty Burger.</h1>
+          <div class="w-28 h-[2px] bg-secondaryColor mx-auto my-5 md:mx-0"></div>
+          <p class="text-paragraphColor text-xl leading-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, laudantium,
+             quos itaque voluptas hic eos obcaecati dicta voluptatum placeat alias facere. 
+             Voluptate nemo eligendi non minima in labore dolore! Rerum!
+          </p>
+          <div class="text-base flex items-center justify-center gap-4 py-10 md:justify-start md:gap-20">
+            <div class="text-center">
+              <i class="fa-solid fa-utensils text-secondaryColor text-4xl"></i>
+              <br />
+              Delicious
+            </div>
+
+            <div class="text-center">
+              <i class="fa-solid fa-droplet text-secondaryColor text-4xl"></i>
+              <br />
+              Fresh
+            </div>
+
+            <div class="text-center">
+              <i class="fa-brands fa-envira text-secondaryColor text-4xl"></i>
+              <br />
+              Organic
+            </div>
+          </div>
+
+          <a href="https://www.natural-colloids.com/Products/category/Specialty-Health-Ingredient?gclid=EAIaIQobChMIjY6fvuXSgwMV8CGDAx2SYw2nEAAYASAAEgK9D_D_BwE" 
+            class="inline-block text-sm py-3 px-8 capitalize text-center cursor-pointer rounded-md ease-linear duration-200 text-black bg-secondaryColor hover:opacity-75"
+            >Learn more</a>
+        </div>
+      </div>
+    </section>
   </main>
   <!------ Footer ------>
   <footer>
