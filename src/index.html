@@ -266,10 +266,10 @@
 
           <div class="tabs_wrap">
             <ul class="flex flex-wrap justify-center gap-3 py-10">
-              <li class="inline-block text-sm py-3 px-8 capitalize text-center cursor-pointer rounded-md ease-linear duration-200 bg-primaryColorLight active">ALL</li>
-              <li class="inline-block text-sm py-3 px-8 capitalize text-center cursor-pointer rounded-md ease-linear duration-200 bg-primaryColorLight ">Food</li>
-              <li class="inline-block text-sm py-3 px-8 capitalize text-center cursor-pointer rounded-md ease-linear duration-200 bg-primaryColorLight ">Snack</li>
-              <li class="inline-block text-sm py-3 px-8 capitalize text-center cursor-pointer rounded-md ease-linear duration-200 bg-primaryColorLight ">Beverage</li>
+              <li data-tabs="all" class="inline-block text-sm py-3 px-8 capitalize text-center cursor-pointer rounded-md ease-linear duration-200 bg-primaryColorLight active">ALL</li>
+              <li data-tabs="food" class="inline-block text-sm py-3 px-8 capitalize text-center cursor-pointer rounded-md ease-linear duration-200 bg-primaryColorLight ">Food</li>
+              <li data-tabs="snack" class="inline-block text-sm py-3 px-8 capitalize text-center cursor-pointer rounded-md ease-linear duration-200 bg-primaryColorLight ">Snack</li>
+              <li data-tabs="beverage" class="inline-block text-sm py-3 px-8 capitalize text-center cursor-pointer rounded-md ease-linear duration-200 bg-primaryColorLight ">Beverage</li>
             </ul>
           </div>
         </div>
@@ -278,7 +278,7 @@
           <ul class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
             <!-- food -->
             <!-- food-1 -->
-            <li>
+            <li class="item_wrap food">
               <div class="h-56 grid place-items-center bg-primaryColorLight
               rounded-3xl hover:bg-secondaryColor ease-linear duration-300 lg:h-40">
                 <img src="img/home-img.png" alt="menu image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
@@ -296,7 +296,7 @@
             </li>
 
             <!-- food-2 -->
-            <li>
+            <li class="item_wrap food">
               <div class="h-56 grid place-items-center bg-primaryColorLight
               rounded-3xl hover:bg-secondaryColor ease-linear duration-300 lg:h-40">
                 <img src="img/burger-1.png" alt="menu image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
@@ -314,7 +314,7 @@
             </li>
 
             <!-- food-3 -->
-            <li>
+            <li class="item_wrap food">
               <div class="h-56 grid place-items-center bg-primaryColorLight
               rounded-3xl hover:bg-secondaryColor ease-linear duration-300 lg:h-40">
                 <img src="img/burger-2.png" alt="menu image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
@@ -332,7 +332,7 @@
             </li>
 
             <!-- food-4 -->
-            <li>
+            <li class="item_wrap food">
               <div class="h-56 grid place-items-center bg-primaryColorLight
               rounded-3xl hover:bg-secondaryColor ease-linear duration-300 lg:h-40">
                 <img src="img/home-img.png" alt="menu image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
@@ -350,7 +350,7 @@
             </li>
 
             <!-- food-5 -->
-            <li>
+            <li class="item_wrap food">
               <div class="h-56 grid place-items-center bg-primaryColorLight
               rounded-3xl hover:bg-secondaryColor ease-linear duration-300 lg:h-40">
                 <img src="img/burger-2.png" alt="menu image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
@@ -369,7 +369,7 @@
 
             <!---- Snack  ---->
             <!-- snack-1 -->
-            <li>
+            <li class="item_wrap snack">
               <div class="h-56 grid place-items-center bg-primaryColorLight
               rounded-3xl hover:bg-secondaryColor ease-linear duration-300 lg:h-40">
                 <img src="img/s-1.png" alt="menu image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
@@ -387,7 +387,7 @@
             </li>
 
             <!-- snack-2 -->
-            <li>
+            <li class="item_wrap snack">
               <div class="h-56 grid place-items-center bg-primaryColorLight
               rounded-3xl hover:bg-secondaryColor ease-linear duration-300 lg:h-40">
                 <img src="img/s-1.png" alt="menu image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
@@ -405,7 +405,7 @@
             </li>
 
             <!-- snack-3 -->
-            <li>
+            <li class="item_wrap snack">
               <div class="h-56 grid place-items-center bg-primaryColorLight
               rounded-3xl hover:bg-secondaryColor ease-linear duration-300 lg:h-40">
                 <img src="img/s-1.png" alt="menu image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
@@ -423,7 +423,7 @@
             </li>
 
             <!-- snack-4 -->
-            <li>
+            <li class="item_wrap snack">
               <div class="h-56 grid place-items-center bg-primaryColorLight
               rounded-3xl hover:bg-secondaryColor ease-linear duration-300 lg:h-40">
                 <img src="img/s-1.png" alt="menu image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
@@ -441,7 +441,7 @@
             </li>
 
             <!-- snack-5 -->
-            <li>
+            <li class="item_wrap snack">
               <div class="h-56 grid place-items-center bg-primaryColorLight
               rounded-3xl hover:bg-secondaryColor ease-linear duration-300 lg:h-40">
                 <img src="img/s-1.png" alt="menu image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
@@ -459,7 +459,7 @@
             </li>
 
             <!-- snack-6 -->
-            <li>
+            <li class="item_wrap snack">
               <div class="h-56 grid place-items-center bg-primaryColorLight
               rounded-3xl hover:bg-secondaryColor ease-linear duration-300 lg:h-40">
                 <img src="img/s-1.png" alt="menu image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
@@ -478,7 +478,7 @@
 
             <!-- Beverage -->
             <!-- beverage-1 -->
-            <li>
+            <li class="item_wrap beverage">
               <div class="h-56 grid place-items-center bg-primaryColorLight
               rounded-3xl hover:bg-secondaryColor ease-linear duration-300 lg:h-40">
                 <img src="img/Beverage-2.png" alt="menu image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
@@ -496,7 +496,7 @@
             </li>
 
             <!-- beverage-2 -->
-            <li>
+            <li class="item_wrap beverage">
               <div class="h-56 grid place-items-center bg-primaryColorLight
               rounded-3xl hover:bg-secondaryColor ease-linear duration-300 lg:h-40">
                 <img src="img/Beverage-3.png" alt="menu image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
@@ -514,7 +514,7 @@
             </li>
 
             <!-- beverage-3 -->
-            <li>
+            <li class="item_wrap beverage">
               <div class="h-56 grid place-items-center bg-primaryColorLight
               rounded-3xl hover:bg-secondaryColor ease-linear duration-300 lg:h-40">
                 <img src="img/Beverage-4.png" alt="menu image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
@@ -532,7 +532,7 @@
             </li>
 
             <!-- beverage-4 -->
-            <li>
+            <li class="item_wrap beverage">
               <div class="h-56 grid place-items-center bg-primaryColorLight
               rounded-3xl hover:bg-secondaryColor ease-linear duration-300 lg:h-40">
                 <img src="img/Beverage-3.png" alt="menu image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
@@ -550,7 +550,7 @@
             </li>
 
             <!-- beverage-5 -->
-            <li>
+            <li class="item_wrap beverage">
               <div class="h-56 grid place-items-center bg-primaryColorLight
               rounded-3xl hover:bg-secondaryColor ease-linear duration-300 lg:h-40">
                 <img src="img/Beverage-2.png" alt="menu image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
