@@ -10,7 +10,6 @@ navLink.forEach(link =>
     })
 )
 
-
 closeIcone.addEventListener("click", () => {
     navMenu.classList.add('hidden');
 })
